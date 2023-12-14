@@ -1,0 +1,42 @@
+Atividade de Desenvolvimento - Sistema CRUD com Máscaras em Formulário HTML, JavaScript e PHP
+
+Objetivo:
+
+Desenvolver um sistema CRUD (Create, Read, Update, Delete) completo para coletar informações de usuários através de um formulário HTML, aplicando máscaras JavaScript aos campos e salvando os dados em um arquivo JSON usando PHP.
+
+Descrição:
+
+Você deve criar um sistema de cadastro de informações de usuários com funcionalidades de criação, leitura, atualização e exclusão de registros. O sistema deve aplicar máscaras apropriadas a todos os campos do formulário e garantir a formatação correta das informações.
+
+Instruções:
+
+    Crie um formulário HTML com os seguintes campos:
+        Nome (campo de texto, não deve permitir números)
+        E-mail (campo de texto)
+        Telefone (campo de texto)
+        Endereço (campo de texto)
+
+    Use JavaScript para aplicar máscaras aos campos. As máscaras devem ser as seguintes:
+        O campo de telefone deve ter uma máscara que formate o número como "(xx) xxxx-xxxx" para números de 11 dígitos, ou "(xx) xxxx-xxxx" para números de 10 dígitos. O campo deve aceitar apenas números.
+        O campo de e-mail deve validar se o formato é um endereço de e-mail válido.
+        O campo de nome não deve permitir números.
+
+    Crie um arquivo PHP para processar o formulário e realizar as seguintes operações:
+
+        Criação de Registros:
+            Verificar se o método de requisição é POST.
+            Coletar os dados do formulário.
+            Ler o arquivo JSON existente (se houver) ou criar um novo se for a primeira vez.
+            Adicionar os novos dados ao arquivo JSON.
+            Redirecionar o usuário de volta ao formulário após o envio.
+
+        Leitura de Registros:
+            Criar uma página PHP que forneça os registros existentes como um JSON para ser lido por JavaScript.
+
+        Atualização de Registros:
+            Criar uma página HTML/JavaScript que liste os registros existentes com a opção de selecionar e editar um registro. Os dados do registro selecionado devem ser carregados em um formulário preenchido para permitir a atualização desses dados.
+
+        Exclusão de Registros:
+            Criar uma página para exclusão que permita ao usuário selecionar e excluir um registro existente.
+
+    O sistema deve ser capaz de lidar com múltiplos registros e permitir que o usuário adicione, edite, exclua e visualize registros.
